@@ -1,5 +1,6 @@
 import "./App.css";
 import Header from "./Header";
+import TinderCards from './TinderCards';
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 function App() {
@@ -14,7 +15,7 @@ function App() {
             <h1>ChatPage</h1>
           </Route>
           <Route path="/">
-            <h1>HomePage</h1>
+            <TinderCards />
           </Route>
         </Switch>
       </Router>
@@ -24,16 +25,4 @@ function App() {
 
 export default App;
 
-{
-  /* TINDER CARDS */
-}
-{
-  /* Buttons below tinde cards  */
-}
 
-{
-  /* Chats screen  */
-}
-{
-  /* Individual chat screen  */
-}
