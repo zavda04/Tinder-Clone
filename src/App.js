@@ -1,21 +1,21 @@
 import "./App.css";
 import Header from "./Header";
-import TinderCards from './TinderCards';
+import TinderCards from "./TinderCards";
+import Chats from "./Chats";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import SwipeButtons from "./SwipeButtons";
 
 function App() {
   return (
     <div className="App">
-      {/* HEADER */}
-      <Header />
-
       <Router>
         <Switch>
           <Route path="/chat">
-            <h1>ChatPage</h1>
+            <Header backButton="/" />
+            <Chats />
           </Route>
           <Route path="/">
+            <Header />
             <TinderCards />
             <SwipeButtons />
           </Route>
@@ -26,5 +26,3 @@ function App() {
 }
 
 export default App;
-
-
